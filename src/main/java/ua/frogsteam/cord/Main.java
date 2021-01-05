@@ -1,0 +1,21 @@
+package ua.frogsteam.cord;
+
+import net.dv8tion.jda.api.JDA;
+import net.dv8tion.jda.api.JDABuilder;
+import net.dv8tion.jda.api.OnlineStatus;
+import net.dv8tion.jda.api.entities.Activity;
+import ua.frogsteam.cord.commands.*;
+
+import javax.security.auth.login.LoginException;
+
+public class Main {
+
+    public static void main(String[] args) throws LoginException {
+        JDA jda = JDABuilder.createDefault("Token").build();
+        jda.getPresence().setStatus(OnlineStatus.DO_NOT_DISTURB);
+        jda.getPresence().setActivity(Activity.watching("Help for bots .!help"));
+        jda.addEventListener(new CommandInfo());
+        jda.addEventListener(new CommandPing());
+        jda.addEventListener(new CommandHelp());
+    }
+}

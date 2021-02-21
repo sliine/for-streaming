@@ -1,0 +1,10 @@
+ua/frogsteam/cord/commands/info/CommandInfo.java
+ ua.frogsteam.cord.commands.info.CommandInfo
+ua/frogsteam/cord/commands/info/CommandHelp.java
+ ua.frogsteam.cord.commands.info.CommandHelp
+ua/frogsteam/cord/commands/info/CommandPing.java
+ ua.frogsteam.cord.commands.info.CommandPing
+ua/frogsteam/cord/Main.java
+ ua.frogsteam.cord.Main
+ua/frogsteam/cord/commands/admin/CommandClear.java
+ ua.frogsteam.cord.commands.admin.CommandClear
